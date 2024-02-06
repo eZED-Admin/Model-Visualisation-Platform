@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eZED Model Display</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+    @font-face {
+      font-family: century-gothic;
+      src: url(assets/century-gothic/CenturyGothic.ttf);
+    }
+    #banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 5px; 
+      box-sizing: border-box;
+      border-radius: 0px 10px 10px 0px;
+      z-index: 1000;
+      background-color: #ffffff; 
+      }
+
+      #banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #infoBox {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        background-color: #d2d2d2;
+        color: rgb(0, 0, 0);
+        font-family: century-gothic;
+        font-size: 2vw;
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 1000;
+        opacity: 0.8;
+    }
+    #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Added this to stack items vertically */
+        z-index: 1001; /* Make sure it's above your 3D scene */
+      }
+
+    #loading-message {
+        font-size: 2.8vw;
+        font-family: century-gothic;
+        margin-top: 10px; /* Add margin to separate from the spinner */
+      }
+    .loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 5vw;
+        height: 5vw;
+        animation: spin 2s linear infinite;
+      }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+        #infoBox {
+            font-size: 4.6vw;
+            padding: 5px;
+        }
+        #banner {
+            padding: 5px;
+        }
+        .loader {
+          width: 10vw;
+          height: 10vw;
+        }
+        #loading-message {
+        font-size: 5vw;
+        margin-top: 10px; 
+      }
+    }
+</style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+        }
+      }
+    </script>
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loader"></div>
+    <div id="loading-message">Loading...</div>
+  </div>
+
+  <div id="banner">
+      <img src="assets/ezed-web-logo.png" alt="Logo">
+  </div>
+  
+  <div id="infoBox">Part Reference: </div>
+
+  <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const partReference = urlParams.get('model');
+      document.getElementById('infoBox').textContent = `Part Reference: ${partReference || 'Not specified'}`;
+  </script>
+
+  <script type="module" src="display.js"></script>
+</body>
+</html>
