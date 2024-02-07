@@ -1,9 +1,5 @@
 {
   "models" : {
-    "Test" : {
-      "mtl" : "Models\/Test\/Test.mtl",
-      "obj" : "Models\/Test\/Test.obj"
-    },
     "Deer Feeder" : {
       "obj" : "Models\/Deer Feeder\/deer_feeder.obj",
       "mtl" : "Models\/Deer Feeder\/deer_feeder.mtl"
@@ -11,10 +7,6 @@
     "Coil" : {
       "obj" : "Models\/Coil\/Coil.obj",
       "mtl" : "Models\/Coil\/Coil.mtl"
-    },
-    "Format Test" : {
-      "obj" : "Models\/Format Test\/Format Test.obj",
-      "mtl" : "Models\/Format Test\/Format Test.mtl"
     },
     "house test" : {
       "obj" : "Models\/house test\/house test.obj",
