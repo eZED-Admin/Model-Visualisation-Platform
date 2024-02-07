@@ -18,7 +18,7 @@ The HTML content is deployed via GitHub Pages under the "pages" branch.
 
 The required model can be accessed via the QR code generated in the downloads folder or by altering the URL parameters.
 
-##### URL: `https://tannin-h.github.io/Model-Viewer/?model=YOUR-CHOSEN-MODEL`
+##### URL: `https://ezed-admin.github.io/Model-Visualisation-Platform/?model=YOUR-CHOSEN-MODEL`
 
 Replace the fully capitalized field with the text displayed in the part reference field.
 
