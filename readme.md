@@ -45,11 +45,11 @@ A 404 error means the model cannot be found. Ensure the steps under Continuous L
 
 ## Model Deletion Protocol
 
-1. Navigate to the pages branch.
-2. Navigate into the directory of the model to be deleted so that you can see both the OBJ and MTL files.
+1. Navigate to the pages branch.![alt text](<assets/Screenshot 2024-02-07 at 4.26.06 PM.png>)
+2. Navigate into the directory of the model to be deleted so that you can see both the OBJ and MTL files.![alt text](<assets/Screenshot 2024-02-07 at 4.26.55 PM.png>)
 3. Select the three dots next to "add file" and choose **Delete Directory**.
 4. Follow the prompts to commit the changes.
-5. Open the **models.json** file and select the pencil in the menu bar to edit the file.
+5. From in the **models.json** file and select the pencil in the menu bar to edit the file.![alt text](<assets/Screenshot 2024-02-07 at 4.28.07 PM.png>)
 6. Remove the dictionary item of the model that needs to be removed. Note the apostrophes after every model except the last.
 
 Before Removing:
