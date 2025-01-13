@@ -1,20 +1,24 @@
 {
   "models" : {
+    "Deer Feeder" : {
+      "obj" : "Models\/Deer Feeder\/deer_feeder.obj",
+      "mtl" : "Models\/Deer Feeder\/deer_feeder.mtl"
+    },
     "Coil" : {
-      "mtl" : "Models\/Coil\/Coil.mtl",
-      "obj" : "Models\/Coil\/Coil.obj"
+      "obj" : "Models\/Coil\/Coil.obj",
+      "mtl" : "Models\/Coil\/Coil.mtl"
     },
     "Thor Final" : {
-      "mtl" : "Models\/Thor Final\/Thor Final.mtl",
-      "obj" : "Models\/Thor Final\/Thor Final.obj"
+      "obj" : "Models\/Thor Final\/Thor Final.obj",
+      "mtl" : "Models\/Thor Final\/Thor Final.mtl"
+    },
+    "Test" : {
+      "obj" : "Models\/Test\/Test.obj",
+      "mtl" : "Models\/Test\/Test.mtl"
     },
     "house test" : {
       "obj" : "Models\/house test\/house test.obj",
       "mtl" : "Models\/house test\/house test.mtl"
-    },
-    "Deer Feeder" : {
-      "mtl" : "Models\/Deer Feeder\/deer_feeder.mtl",
-      "obj" : "Models\/Deer Feeder\/deer_feeder.obj"
     }
   }
 }
